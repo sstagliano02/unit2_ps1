@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P4</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1> Assignment 3 Problem 4</h1>
+
+    <script>
+        fnum = Number(prompt("First Number?"))
+        lnum = Number(prompt("Last Number?"))
+
+        // if (fnum > lnum) {
+        //     document.getElementById("small").innerHTML = " Smallest Num: " + lnum;
+        //     document.getElementById("large").innerHTML = " Largest Num: " + fnum;
+        // }
+        // else if (fnum < lnum) {
+        //     document.getElementById("small").innerHTML = " Smallest Num: " + fnum;
+        //     document.getElementById("large").innerHTML = " Largest Num: " + lnum;
+        // }
+        // else if (fnum == lnum) {
+        //     document.getElementById("small").innerHTML = "The numbers are the same";
+        //     document.getElementById("large").innerHTML = "The numbers are the same";
+        // }
+        // else {
+        //     alert("Enter a valid number");
+        // }
+
+        document.write("Odd numbers from " + fnum + " to " + lnum + "<br><br>");
+
+        sum = 0
+
+        for(var i=fnum;i<=lnum;i++){
+            if ((i%2)!=0) {
+                document.write(i +"<br/>");
+                sum = sum + i
+            }
+        }
+        document.write("<br/> Here is the total sum: " + sum)
+
+    </script>
+
+</body>
+</html>

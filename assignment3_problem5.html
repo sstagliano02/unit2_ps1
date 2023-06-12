@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P5</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1> Assignment 3 Problem 5</h1>
+
+    <script>
+        fnum = Number(prompt("Number?"))
+
+        document.write("Times table for " + fnum + ":<br><br>");
+
+
+        function times_table(num) {
+            for(var i=1;i<=12;i++){
+                product = num * i;
+                document.write(num + " x " + i + " = " + product + "<br/>");
+            }
+        }
+
+        times_table(fnum)
+
+
+    </script>
+
+</body>
+</html>

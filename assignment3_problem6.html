@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P6</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1> Assignment 3 Problem 6</h1>
+
+    <script>
+        len = Number(prompt("Length of random array? Array of random values between 0 and 100 will be generated"))
+        val = Number(prompt("Value for comparison?"))
+
+        rand_array = Array.from({length: len}, () => Math.floor(Math.random() * 100))
+
+        document.write("This is the random array: <br><br>" + rand_array);
+
+        function count(array, value) {
+            let counter = 0;
+            for(let x of array){
+                if (x < value) {
+                    counter = counter + 1};
+            }
+            return counter;
+        }
+
+
+        function display(array, value) {
+            count_result = count(array, value);
+            document.write("<br><br> Count of numbers in array less than " + value + ": " + count_result);
+        }
+
+        display(rand_array,val)
+
+    </script>
+
+</body>
+</html>
